@@ -1,0 +1,20 @@
+Sua inscrição está confirmada!
+
+Dados:
+
+Nome: {{ name }}
+
+CPF: {{ cpf }}
+
+E-mail: {{ email }}
+
+Telefone: {{ phone }}
+
+
+Em até 48 horas úteis, entraremos em contato para confirmar a matrícula.
+
+Atenciosamente,
+
+--
+
+Morena
