@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'storages',
+    'test_without_migrations',
     'django_extensions',
     'eventex.core',
     'eventex.subscriptions',
