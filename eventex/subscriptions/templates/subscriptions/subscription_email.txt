@@ -2,13 +2,13 @@ Sua inscrição está confirmada!
 
 Dados:
 
-Nome: {{ name }}
+Nome: {{ subscription.name }}
 
-CPF: {{ cpf }}
+CPF: {{ subscription.cpf }}
 
-E-mail: {{ email }}
+E-mail: {{ subscription.email }}
 
-Telefone: {{ phone }}
+Telefone: {{ subscription.phone }}
 
 
 Em até 48 horas úteis, entraremos em contato para confirmar a matrícula.
