@@ -2,7 +2,7 @@
 
 This is a Django application to serve a website
 
-[![Build Status](https://travis-ci.org/vsapucaia/django-eventex.svg?branch=master)](https://travis-ci.org/vsapucaia/django-eventex) [![Code Health](https://landscape.io/github/vsapucaia/django-eventex/master/landscape.svg?style=flat)](https://landscape.io/github/vsapucaia/django-eventex/master)
+[![Build Status](https://travis-ci.org/vsapucaia/django-eventex.svg?branch=master)](https://travis-ci.org/vsapucaia/django-eventex) [![Code Health](https://landscape.io/github/vsapucaia/django-eventex/master/landscape.svg?style=flat)](https://landscape.io/github/vsapucaia/django-eventex/master) [![Coverage Status](https://coveralls.io/repos/github/vsapucaia/django-eventex/badge.svg)](https://coveralls.io/github/vsapucaia/django-eventex)
 
 ## How to develop
 
