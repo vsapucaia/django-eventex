@@ -14,6 +14,20 @@ class HomeTest(TestCase):
         """Must use index.html"""
         self.assertTemplateUsed(self.resp, 'index.html')
 
-    def text_subscription_link(self):
+    def test_subscription_link(self):
         expected = 'href="{}"'.format(r('subscriptions:new'))
+        self.assertContains(self.resp, expected)
+
+    def test_speakers(self):
+        contents = ['Grace Hopper',
+                    'http://hbn.link/hopper-pic',
+                    'Alan Turing',
+                    'http://hbn.link/turing-pic']
+
+        for expected in contents:
+            with self.subTest():
+                self.assertContains(self.resp, expected)
+
+    def test_speakers_link(self):
+        expected = 'href="{}#speakers"'.format(r('home'))
         self.assertContains(self.resp, expected)
