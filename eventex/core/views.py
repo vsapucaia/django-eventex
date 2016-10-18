@@ -14,17 +14,14 @@ def speaker_detail(request, slug):
 
 
 def talk_list(request):
-    speaker = Speaker(name='Henrique Bastos', slug='henrique-bastos')
-    courses = [
-        dict(title='Título do curso',
-             start='09:00',
-             description='Descrição do curso.',
-             speakers={'all': [speaker]})
-    ]
+    # at_morning = list(Talk.objects.at_morning()) + list(Course.objects.at_morning())
+    # at_morning.sort(key=lambda o: o.start)
+    #
+    # at_afternoon = list(Talk.objects.at_afternoon()) + list(Course.objects.at_afternoon())
+    # at_afternoon.sort(key=lambda o: o.start)
 
     context = {
         'morning_talks': Talk.objects.at_morning(),
-        'afternoon_talks': Talk.objects.at_afternoon(),
-        'courses': Course.objects.all()
+        'afternoon_talks': Talk.objects.at_afternoon()
     }
     return render(request, 'core/talk_list.html', context)
